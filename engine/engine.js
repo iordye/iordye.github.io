@@ -298,7 +298,13 @@
 
         if(submit === true){
             $("#bookSessionManual").html("<span class='loader'><span class='loading'></span></span>");
-            $.post(
+            setTimeout(callScrollTop, 1000);
+            function callScrollTop(){
+                $('html, body').animate({scrollTop: (alertArea.offset().top - 100)}, 200);
+                $("#bookSessionManual").html("Submit manualy");
+                window.location.href="mailto:dlightphotographi@gmail.com";
+            }
+            /*$.post(
                 "engine/email.php",
                 {
                     first_name : firstName.val(),
@@ -333,7 +339,7 @@
                             $("#bookSessionManual").html("Submit manualy");
                         }
                     }
-            });
+            });*/
         }else{
             setTimeout(callScrollTop, 1000);
             function callScrollTop(){
