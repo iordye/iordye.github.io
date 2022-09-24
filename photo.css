@@ -1,0 +1,639 @@
+@font-face {
+    font-family: headerFont;
+    src: url(main_fonts/SCRIPTBL.TTF);
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    padding: 0%;
+    margin: 0%;
+    background-color: rgb(238, 223, 204);
+}
+header{
+    background-color: rgb(235, 235, 229);
+    width: 100%;
+    padding: 14px;
+    margin-bottom: 0;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+    z-index: 1;
+}
+.logotop{
+	font-family: headerFont;
+    position: relative;
+    font-size:25px;
+    top: -13px;
+    left: 20px;
+    color: orangered;
+    font-weight: bold;
+}
+.logotop2{
+	font-family: yu mincho light;
+    position: relative;
+    top: 23px;
+    left: -88px;
+    font-size: 17px;
+    color: rgb(53, 14, 14);
+    font-weight: bold;
+}
+.bi-camera2{
+    color: brown;   
+    font-size: larger;
+    font-size: 30px;
+    color: brown;
+}
+/*use javascript to display this search form block */
+#forms{
+    display: flex;
+    margin-top: 10px;
+    justify-content: center;
+    display: none;
+}
+/*use javascript to display this search form block */
+.bi-search{
+    float: right;
+    font-size: 20px;
+    color: brown;
+}
+
+
+.bi-list{
+    float: right;
+    margin-left: 24px;
+     font-size: 25px;
+     color: brown;
+     padding: 0 5px 0 0;
+ }
+
+.search2{
+    position: relative;
+    left: 4px;
+    top: 2px;
+    font-size: 20px;
+    color: brown;
+}
+
+
+nav{
+    background-color: white;
+    width: 50%;
+    z-index: 1;
+    height:100%;
+    position: fixed;
+    padding: 0 ;
+    display: none;
+    /*display navigation block using javascript onclick of bi-list*/
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+li{
+    padding: 17px 0;
+    text-align: center;
+    color: rgb(155, 41, 41);
+    font-weight: bold;
+}
+
+a{
+    text-decoration-line: none;
+    color:brown;
+}
+
+img{
+    width: 100%;
+    height: 500px;
+    padding: 0.8% 0.5% ;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+   filter: saturate(1.4);
+}
+
+.bringlife{
+    padding:0 20px 0 20px;
+    font-size:large;
+    text-align: center;
+    font-family: Adobe Garamond Pro;
+      
+}
+
+.borderbottom{
+    border-bottom: 2px solid brown;
+    display: block;
+    width: 25%;
+    position: relative;
+    left: 39%;
+    top: 9px;
+     border-radius: 15%;
+}
+.borderbottom2{
+    border-bottom: 2px solid brown;
+    display: block;
+    width: 25%;
+    position: relative;
+    left: 39%;
+    top: -12px;
+     border-radius: 15%;
+}
+
+.borderbottom3{
+    border-bottom: 3px solid brown;
+    display: block;
+    width: 10%;
+    position: relative;
+    left: 45%;
+    margin: 30px 0;
+     border-radius: 15%;
+}
+.welcome{
+    text-align: center;
+    font-size: 30px;
+    font-family:  yu mincho light;
+    font-weight: bolder;
+    color: orangered;
+    margin: 0 10px 0;
+   
+}
+
+.advert{
+   text-align:center ;
+   width:100%;
+   padding: 0px 30px;
+   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 50px;
+   font-size: large;
+}
+
+.pho{
+   text-align:center ;
+   width:100%;
+   padding: 0px 90px;
+   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 50px;
+   font-size: large;
+}
+
+.firstfooter{
+    background-color: rgb(230, 225, 220);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin-bottom: 0px;
+    padding: 20px;
+}
+
+.visit{
+   text-align: center;
+    padding-top: 0px;
+    color: rgb(114, 28, 28);
+	font-weight: bold;
+}
+
+.address{
+    text-align: center;
+    padding-top: 0px;
+    margin-top: 4px;	
+}
+
+.contact{
+     text-align: center;
+    padding-top: 4px;
+    color: rgb(114, 28, 28);
+	font-weight: bold;
+}
+
+.bi-telephone-fill{
+    color:rgb(39, 38, 38);
+    
+}
+.phnno{
+    color: black;
+	text-align: center;
+	padding-top: 4px;
+}
+
+.bi-envelope-fill{
+    color: rgb(39, 38, 38);
+}
+
+.email{
+   color: black;
+	text-align: center;
+	padding-top: 4px;
+}
+
+.socials{
+font-size: 30px;
+padding-top: 4px;
+text-align: center;
+}
+
+.handles{
+    font-weight: bold;
+    text-align: center;
+    color: rgb(114, 28, 28);
+	padding-top: 4px;
+}
+
+.bi-facebook{
+   color: blue;
+}
+
+.bi-instagram{
+        color: rgb(211, 39, 9);
+}
+
+.bi-whatsapp{
+     color: green;
+}
+
+.bi-twitter{
+       color: rgb(54, 91, 214);
+}
+
+.lstfooter{
+    background-color:rgba(148, 68, 48, 0.342);
+    padding:  30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer{
+    width: 100%;
+}
+
+.outdoor{
+    background-color: rgb(240, 240, 240);
+    padding: 20px;
+    margin: 20px;
+    box-shadow: 5px 8px 5px lightgreen;
+    text-align: center;
+    font-weight: bold;
+    font-size: large;
+}
+
+.imageportfolio{
+    margin-bottom: 5px;
+}
+.Portfolio{
+        text-align: center;
+        font-size: 30px;
+        font-family:  yu mincho light;
+        font-weight: bolder;
+        color: orangered;
+        margin: 0 0 10px 0;
+        background-color: rgb(238, 223, 204);
+        padding: 10px 30px;
+        position: sticky;
+        top: 0;
+        z-index: 1;
+}
+
+.resume{
+    padding: 15px;
+    text-align: center;
+    font-weight: normal;
+    font-family:  yu mincho light;
+    padding: 8px;
+    margin: 10px;
+    box-shadow: 5px 8px 5px lightgreen;
+    background-color: rgb(240, 240, 240);
+}
+
+.Clientsheader{
+    font-size: 30px;
+    font-family:  yu mincho light;
+    color: orangered;
+    background-color: rgb(238, 223, 204);
+    padding: 0 0 0 10px;
+}
+
+.firstname{
+    padding: 0 0 0 17px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.Othernames{
+    padding: 0 0 0 17px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.adress{
+    padding: 0 0 0 17px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.phonenumber{
+    padding: 0 0 0 17px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+   
+}
+
+.mail{
+    padding: 0 0 0 17px;
+    margin-bottom: 20px;
+    font-family: 'Courier New', Courier, monospace;
+   }
+
+.outdoor2{
+      padding: 0 0 0 17px;
+      font-family: 'Courier New', Courier, monospace;
+}
+.model2{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.event2{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.home2{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+.others2{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.sesstype{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+    margin-bottom: 10px;
+    font-weight: bold;
+    color: rgb(155, 41, 41);
+}
+
+.sessiondate{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.sessionend{
+    padding: 17px 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+   
+   
+}
+
+.sessiontime{
+    padding: 0 0 0 17px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+form{
+    color: rgb(155, 41, 41);
+}
+
+.submitbook{
+    margin: 20px 0 0 17px;
+    padding: 10px;
+    
+    border-radius: 10px;
+    border: 1px transparent;
+    background-color: brown;
+    color: white;
+}
+
+.contactusparagraph{
+   text-align:center ;
+   width:100%;
+   padding: 0px 50px;
+   font-family:  'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+   margin-bottom: 50px;
+   font-size: larger;
+   color: brown;
+}
+
+.contactus{
+    text-align: center;
+    font-size: 30px;
+    font-family:  yu mincho light;
+    font-weight: bolder;
+    color: orangered;
+    margin: 0 0 10px 0;
+    background-color: rgb(238, 223, 204);
+    padding: 10px 30px;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+
+footer a {
+    color:black;
+    
+}
+
+@media only screen and (min-width:600px) {
+    .logotop{
+        font-family: script mt;
+        position: relative;
+        font-size: 30px;
+        top: -13px;
+        left: 20px;
+        color: orangered;
+    }
+    .logotop2{
+        font-family: yu mincho light;
+        position: relative;
+        top: 23px;
+        left: -70px;
+        font-size: 25px;
+        color: rgb(53, 14, 14);
+    }
+    .bi-camera2{
+        color: brown;   
+        font-size: larger;
+        font-size: 30px;
+        color: brown;
+    }
+    /*use javascript to display this search form block */
+    #forms{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        display: none;
+    }
+    /*use javascript to display this search form block */
+    .bi-search{
+        float: right;
+        font-size: 24px;
+        color: brown;
+    }
+    
+    
+    .bi-list{
+        float: right;
+        margin-left: 24px;
+         font-size: 30px;
+         color: brown;
+         padding: 0 5px 0 0;
+     }
+    
+    .search2{
+        position: relative;
+        left: 4px;
+        top: 2px;
+        font-size: 20px;
+        color: brown;
+    }
+   
+    .copy{
+        font-weight: normal;
+        position: relative;
+        left: 30px;
+    }
+}
+
+@media only screen and (min-width:768px) {
+
+
+    nav{
+        background-color: rgb(235, 235, 229);
+        width: 100%;
+        z-index: 1;
+        height:auto;
+        position: fixed;
+        padding: 0 ;
+        display: inline;       
+    }
+
+    ul{
+        list-style-type: none;
+        padding: 0;
+        margin-left: 10px;
+    }
+    
+    li{
+        padding: 5px 7px 5px 10px;
+        text-align: center;
+        color: rgb(155, 41, 41);
+        font-weight: bold;
+        display: inline;
+        background-color: white;
+        border-radius: 30px;
+    }
+
+    .bi-list,.bi-search{
+        display: none;
+    }
+
+    .welcome{
+        margin-top: 50px ;
+    }
+      
+    img{
+        width: 45%;
+        height: auto;
+    }
+
+    .logotop{
+        font-family: script mt;
+        position: relative;
+        font-size: 30px;
+        top: -13px;
+        left: 20px;
+        color: orangered;
+    }
+    .logotop2{
+        font-family: yu mincho light;
+        position: relative;
+        top: 23px;
+        left: -70px;
+        font-size: 25px;
+        color: rgb(53, 14, 14);
+    }
+    .bi-camera2{
+        color: brown;   
+        font-size: larger;
+        font-size: 30px;
+        color: brown;
+    }
+    /*use javascript to display this search form block */
+    #forms{
+        display: flex;
+        margin-top: 10px;
+        justify-content: center;
+        display: none;
+    }
+    /*use javascript to display this search form block */
+    .bi-search{
+        float: right;
+        font-size: 24px;
+        color: brown;
+    }
+    
+    
+    .bi-list{
+        float: right;
+        margin-left: 24px;
+         font-size: 30px;
+         color: brown;
+         padding: 0 5px 0 0;
+     }
+    
+    .search2{
+        position: relative;
+        left: 4px;
+        top: 2px;
+        font-size: 20px;
+        color: brown;
+    }
+
+    .copy{
+        font-weight: normal;
+        position: relative;
+        left: 30px;
+    }
+
+    .Clientsheader{
+        
+        margin-top: 60px;
+    }
+
+    .Othernames{
+        padding: 0 0 0 17px;
+        margin-bottom: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        left: 250px;
+        top: 176px;
+    }
+       
+    .phonenumber{
+        padding: 0 0 0 17px;
+        margin-bottom: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        left: 250px;
+        top: 242px;
+    }
+    
+    .mail{
+        padding: 0 0 0 17px;
+        margin-bottom: 20px;
+        font-family: 'Courier New', Courier, monospace;
+        position: absolute;
+        left: 250px;
+        top: 305px;
+    }
+
+    .contactusparagraph{
+        margin-top: 70px;
+    }
+    div.outdoor {
+        width: 80%;
+        margin-left: calc(20%/2);
+        margin-right: calc(20%/2);
+    }
+}

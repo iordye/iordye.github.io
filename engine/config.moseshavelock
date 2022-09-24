@@ -1,0 +1,16 @@
+﻿let webHost = window.location.host;
+var _sitePages = [
+    {name : "Book Session", link : "http://" + webHost + "/bookingpage.html"}, 
+    {name : "Portfolio", link : "http://" + webHost + "/photo-Portfolio.html"}, 
+    {name : "Book Page", link : "http://" + webHost + "/bookingpage.html"}, 
+    {name : "Contact us", link : "http://" + webHost + "/contactusphoto.html"}, 
+    {name : "Gallery", link : "http://" + webHost + "/client'sgallery.html"},
+    {name : "Facebook Page", link : "http://www.facebook.com/pixlehubpage"},
+    {name : "Instagram Page", link : "http://www.instagram.com/dlightphotographi"},
+    {name : "Twitter Page", link : "http://www.twitter.com/dlightfotografi"},
+    {name : "Whatsapp", link : "http://api.whatsapp.com/send?phone=2349053278213"},
+    {name : "Terms and Conditions", link : "http://" + webHost + "/terms.html"},
+    {name : "Tiktok", link : "http://tiktok.com/@comrharun"},
+    {name : "about us", link : "http://" + webHost + "/aboutus.html"},
+    {name : "about us", link : "http://" + webHost + "/report.html"}
+];

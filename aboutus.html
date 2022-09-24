@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= , initial-scale=1.0">
+        <meta name="description" content="Photograpy portfolio D-lightPhotograpy portfolio pixelshub360 
+        photographerportfolio Nigerianphotogrpahers Benue Photographers">
+        <meta name="keyword" content="D-light,D-lightPhotograpy,Dlight,Dlight Photograpy,Photograpy,
+        Pixels hub 360,360,pixels,pixelshub360,photographerportfolio,Nigerianphotogrpahers,Benue Photographers">   
+        <meta name="AUTHOR" content="UBA BANKER">
+        <link rel="stylesheet" href="photo.css">
+        <link rel="stylesheet" href="bootstrap-icons.css">
+        <link rel="stylesheet" type="text/css" href="engine/cssSystem.css">
+         <title>About Us</title>
+       <script type="text/javascript" src="engine/resource/Angular.v1.5.9.js"></script>
+       <script type="text/javascript" src="engine/config.moseshavelock"></script>
+    </head>
+<body>
+    <header>
+        <span class="logotop">D-light <span class="bi bi-camera2"></span><span class="logotop2"><b>photograpy</b></span></span> 
+        
+       <span class="bi bi-list" id="menu_button" onclick="navigationFunction()"></span>
+       <span class="bi bi-search" id="search_box_button" onclick="searchBoxFunction()"></span>
+      </header>
+    <nav id="navigationBox"> <!--display navigation block using javascript onclick of bi-list*/-->
+      <ul>
+       <li><a href="index.html">Home</a></li>
+       <!--Since you wanted me to say please oga please link this search in the navigation bar to the search box-->
+       <li><a id="search_box_button" onclick="searchBoxFunction()">Search</a></li>
+       <li><a href="photo-Portfolio.html">Portfolio</a></li>
+       <li><a>Photographers</a></li>
+       <li><a href="bookingpage.html">Book a Session</a></li>
+       <li><a href="contactusphoto.html">Contact Us</a></li>
+       <li><a href="client'sgallery.html">Clients gallery</a></li>
+       <li><a>Blog</a></li>
+      </ul>
+    </nav>
+    <div id="forms" class="search_box" ng-app="mosesHavelockApp" ng-controller="searchApp">
+       <!--Display this search input block onclick   -->
+          <form id="searchFormArea">
+           <input oninput="chcckInputLenght()" type="search" id="searchValue" name="search" placeholder="Search" ng-model="searchInput" value="">
+           <span class="bi bi-search" onclick="searchBoxFunction()" id="search_box_button_not_too_used"></span>
+          </form>
+       <!--Display this search input block onclick-->
+       <div id="searchResultingArea" class="search-result" style="display: none;">
+          <h3>Result(s):</h3>
+          <ul id="searchResultList">
+             <li ng-repeat="x in pages | filter : searchInput" class="searchResultLink"><a href="{{ x.link }}" > {{ x.name }} </a></li>
+          </ul> 
+       </div>
+    </div>
+    <script>
+    function chcckInputLenght(){
+       if(document.getElementById("searchValue").value.length >= 1){
+          document.getElementById("searchResultingArea").style.display = "block";  
+       }else{
+          document.getElementById("searchResultingArea").style.display = "none"; 
+       }
+    }
+    </script>
+   
+    <h1 style=" padding:30px;">About US</h1>
+    <p style="word-break: normal; word-wrap: break-word;  padding:30px;">
+        
+For a couple of years now, I have been on an otherworldly adventure that has caused a move in my spirit. I began to feel that as my point of view on life developed, my motivation for taking photos didn’t impact me any longer. It as of late hit me that my explanations behind adoring photography could advance inside me also.
+
+I used to take pictures trying to stop time. I felt frantic to clutch past recollections, instead of living in the now. I in the long run understood that I need to take pictures not to look back, but rather with an end goal to commend the vitality of the present minute. Capturing that awesome moment.
+
+ 
+    </p>
+    <div class="firstfooter">
+        <div class="visit">Visit Us</div>
+  
+       <div class="address">Number 5 Ali Akuli Road Makurdi,Benue state,Nigeria.</div>
+  
+        <div class="contact">Contact us</div>
+  
+         <div class=" phnno">
+            <span class="bi bi-telephone-fill"> :+2349053278213</span>
+        </div>
+  
+        <div class="email"> 
+            <span class="bi bi-envelope-fill"> :dlightphotographi@gmail.com</span>
+        </div>
+         <div class="handles">Via our social media handles</div>
+        <div class="socials">
+         <a href="http://www.facebook.com/phaatima.haruna" class="bi bi-facebook"></a>
+         <a href="www.instagram.com/dlightphotographi" class="bi bi-instagram"></a>
+         <a href="www.twitter.com/dlightfotografi" class="bi bi-twitter"></a>
+         <a href="http://api.whatsapp.com/send?phone=2349053278213" class="bi bi-whatsapp"></a>
+         <a href="tiktok.com/@comrharun" class="bi bi-tiktok"></a>
+        </div>
+     </div>
+  
+   
+     <footer>
+      <div class="lstfooter">
+      <a href="bookingpage.html">Book a photo session</a><br>
+      <a href="aboutus.html">About us</a><br>
+      <a href="terms.html">Terms and conditions</a><br>
+      <a href="mailto:dlightphotographi@gmail.com">Report</a><br>
+      
+      <p class="copy">&copy;1992-
+        <script>
+        var date = new Date(); 
+        document.write(date.getFullYear());
+        </script>
+        <br>All rights reserved by <script> document.write(window.location.host); </script>
+        </p>
+     </div>
+     
+  </footer>    
+  
+  <script src="photo.js"></script>
+  <script type="text/javascript" src="engine/scriptSystem.js"></script>
+  <script type="text/javascript" src="engine/search.js"></script>
+
+    
+</body>
+</html>
+

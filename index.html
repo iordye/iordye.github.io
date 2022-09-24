@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width= , initial-scale=1.0">
+    <meta name="description" content="Photograpy portfolio D-lightPhotograpy portfolio pixelshub360 
+    photographerportfolio Nigerianphotogrpahers Benue Photographers">
+    <meta name="keyword" content="D-light,D-lightPhotograpy,Dlight,Dlight Photograpy,Photograpy,
+    Pixels hub 360,360,pixels,pixelshub360,photographerportfolio,Nigerianphotogrpahers,Benue Photographers">   
+    <meta name="AUTHOR" content="UBA BANKER">
+    <link rel="stylesheet" href="photo.css">
+    <link rel="stylesheet" href="bootstrap-icons.css">
+    <link rel="stylesheet" type="text/css" href="engine/cssSystem.css">
+     <title>Pixelshub360</title>
+   <script type="text/javascript" src="engine/resource/Angular.v1.5.9.js"></script>
+   <script type="text/javascript" src="engine/config.moseshavelock"></script>
+</head>
+<body>
+   <header>
+    <span class="logotop">D-light <span class="bi bi-camera2"></span><span class="logotop2"><b>photograpy</b></span></span> 
+    
+   <span class="bi bi-list" id="menu_button" onclick="navigationFunction()"></span>
+   <span class="bi bi-search" id="search_box_button" onclick="searchBoxFunction()"></span>
+  </header>
+<nav id="navigationBox"> <!--display navigation block using javascript onclick of bi-list*/-->
+  <ul>
+   <li><a href="index.html">Home</a></li>
+   <!--Since you wanted me to say please oga please link this search in the navigation bar to the search box-->
+   <li><a id="search_box_button" onclick="searchBoxFunction()">Search</a></li>
+   <li><a href="photo-Portfolio.html">Portfolio</a></li>
+   <li><a>Photographers</a></li>
+   <li><a href="bookingpage.html">Book a Session</a></li>
+   <li><a href="contactusphoto.html">Contact Us</a></li>
+   <li><a href="client'sgallery.html">Clients gallery</a></li>
+   <li><a>Blog</a></li>
+  </ul>
+</nav>
+<div id="forms" class="search_box" ng-app="mosesHavelockApp" ng-controller="searchApp">
+   <!--Display this search input block onclick   -->
+      <form id="searchFormArea">
+       <input oninput="chcckInputLenght()" type="search" id="searchValue" name="search" placeholder="Search" ng-model="searchInput" value="">
+       <span class="bi bi-search" onclick="searchBoxFunction()" id="search_box_button_not_too_used"></span>
+      </form>
+   <!--Display this search input block onclick-->
+   <div id="searchResultingArea" class="search-result" style="display: none;">
+      <h3>Result(s):</h3>
+      <ul id="searchResultList">
+         <li ng-repeat="x in pages | filter : searchInput" class="searchResultLink"><a href="{{ x.link }}" > {{ x.name }} </a></li>
+      </ul> 
+   </div>
+</div>
+<script>
+function chcckInputLenght(){
+   if(document.getElementById("searchValue").value.length >= 1){
+      document.getElementById("searchResultingArea").style.display = "block";  
+   }else{
+      document.getElementById("searchResultingArea").style.display = "none"; 
+   }
+}
+</script>
+
+         
+
+<div class="desktop">
+<div class="welcome"> WELCOME</div>
+
+<span class="borderbottom"></span>
+
+<p class="bringlife">We are here to help bring life to your memories 
+   and also keep these memories alive through photography.</p>
+
+<span class="borderbottom2"></span>
+
+<!--slide show-->
+   <div class="intrance_image_slices" id="intranceImageSlices"> 
+   <!--slide showing picture will go here-->
+   <div class="image_slice_box">
+      <img src="slice/modelling.jpg" alt="Modelling" id="pic1" class="slice_image">
+      <img src="slice/culture.jpg" alt="Culture" id="pic1" class="slice_image">
+      <img src="slice/ourstudio.jpg" alt="Our Studio" id="pic1" class="slice_image">
+      <img src="slice/outdoor.jpg" alt="Outdoor" id="pic1" class="slice_image">
+      <img src="slice/wedd.jpg" alt="Wedding" id="pic1" class="slice_image">
+   </div>
+   <span id="image_text">Text</span>
+   <button id="left" class="clickChecker" onclick="showSliceImagesLeft()">&lt;</button>
+   <button id="right" class="clickChecker" onclick="showSliceImagesRight()">&gt;</button>
+   </div>
+   <div class="slice_image_small_box">
+      <img src="slice/modelling.jpg" width="50" height="40" alt="Modelling" class="slice_image_small">
+      <img src="slice/culture.jpg" width="50" height="40" alt="Culture" class="slice_image_small">
+      <img src="slice/ourstudio.jpg" width="50" height="40" alt="Our Studio" class="slice_image_small">
+      <img src="slice/outdoor.jpg" width="50" height="40" alt="Outdoor" class="slice_image_small">
+      <img src="slice/wedd.jpg" width="50" height="40" alt="Wedding" class="slice_image_small">  
+   </div>
+   <!--slide showing picture will go here-->
+   <!--slide show-->
+
+<span class="borderbottom3"></span>
+
+<p class="advert">Are you looking for creative and a professional studio or photographer for a photo shoot ?<br>
+   Then search no more, for <b>D-light stuidos</b> is here to offer exculsive services for your creative needs.
+   be it <b>OUTDOOR</b> shots,covering your<b>WEDDING</b> with majestic shots,<b>MODELLING</b> shots, shooting 
+   your <b>PORTRAIT</b> photos, capturing your cooporate visions and many more.<br>Pictures the say are worth 
+   a thousand words and our ultimate goal is to make surethese words tell the proper story of your brand today 
+   to you and tommorrow to the unborn generations. </p>
+   
+<img src="photos/IMG-20220825-WA0037.jpg" alt="A model with an apple in the hand">
+
+<span class="borderbottom3"></span>
+
+<p class="pho">
+   "Photograpy is a way of feeling, a way of tounching, a way of loving.<br>
+   What so ever you've caught on film is captured for ever in your heart and 
+   mind,it reminds you of every moment long after you have forgotten everything". </p>
+   </div>
+   <div class="firstfooter">
+      <div class="visit">Visit Us</div>
+
+     <div class="address">Number 5 Ali Akuli Road Makurdi,Benue state,Nigeria.</div>
+
+      <div class="contact">Contact us</div>
+
+       <div class=" phnno">
+	      <span class="bi bi-telephone-fill"> :+2349053278213</span>
+      </div>
+
+      <div class="email"> 
+          <span class="bi bi-envelope-fill"> :dlightphotographi@gmail.com</span>
+      </div>
+       <div class="handles">Via our social media handles</div>
+      <div class="socials">
+        
+      <a href="http://www.facebook.com/phaatima.haruna" class="bi bi-facebook"></a>
+      <a href="www.instagram.com/dlightphotographi" class="bi bi-instagram"></a>
+      <a href="www.twitter.com/dlightfotografi" class="bi bi-twitter"></a>
+      <a href="http://api.whatsapp.com/send?phone=2349053278213" class="bi bi-whatsapp"></a>
+      <a href="tiktok.com/@comrharun" class="bi bi-tiktok"></a>
+      </div>
+   </div>
+
+ 
+ <footer>
+    <div class="lstfooter">
+    <a href="bookingpage.html">Book a photo session</a><br>
+    <a href="aboutus.html">About us</a><br>
+    <a href="terms.html">Terms and conditions</a><br>
+    <a href="mailto:dlightphotographi@gmail.com">Report</a><br>
+    
+    <p class="copy">&copy;1992-
+      <script>
+      var date = new Date(); 
+      document.write(date.getFullYear());
+      </script>
+      <br>All rights reserved by <script> document.write(window.location.host); </script>
+      </p>
+   </div>
+   
+</footer>    
+
+
+<script src="photo.js"></script>
+<script type="text/javascript" src="engine/scriptSystem.js"></script>
+<script type="text/javascript" src="engine/scriptSystemSliceder.js"></script>
+<script type="text/javascript" src="engine/search.js"></script>
+</body>
+</html>
