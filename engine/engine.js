@@ -301,7 +301,7 @@
             setTimeout(callScrollTop, 1000);
             function callScrollTop(){
                 $('html, body').animate({scrollTop: (alertArea.offset().top - 100)}, 200);
-                $("#bookSessionManual").html("Submit manualy");
+                $("#bookSessionManual").html("Book manualy");
                 window.location.href="mailto:dlightphotographi@gmail.com";
             }
             /*$.post(
@@ -344,7 +344,7 @@
             setTimeout(callScrollTop, 1000);
             function callScrollTop(){
                 $('html, body').animate({scrollTop: (alertArea.offset().top - 100)}, 200);
-                $("#bookSessionManual").html("Submit manualy");
+                $("#bookSessionManual").html("Book manualy");
             }
         }
     });
