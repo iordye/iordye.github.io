@@ -1,8 +1,8 @@
 ﻿var navigation = document.getElementById("navigationBox");
 var menuButton = document.getElementById("menu_button");
-var searchBox = document.querySelector(".search_box");
-var searchBoxButton = document.getElementById("search_box_button");
-var searchBoxButtonNotTooUsed = document.getElementById("search_box_button_not_too_used");
+let searchBox = document.querySelector(".search_box");
+let searchBoxButton = document.getElementById("search_box_button");
+let searchBoxButtonNotTooUsed = document.getElementById("search_box_button_not_too_used");
 var intervarDefine;
 window.onload = function(){
     menuButton.style.cursor = "pointer";
