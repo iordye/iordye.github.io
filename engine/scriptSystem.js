@@ -1,4 +1,4 @@
-﻿var navigation = document.getElementById("navigationBox");
+var navigation = document.getElementById("navigationBox");
 var menuButton = document.getElementById("menu_button");
 let searchBox = document.querySelector(".search_box");
 let searchBoxButton = document.getElementById("search_box_button");
